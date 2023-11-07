@@ -1,0 +1,18 @@
+<!--pages/list/list.wxml-->
+<!-- <template> -->
+    <swiper indicator-dots="{{indicatorDots}}">
+      <swiper-item wx:for="{{swiperArr}}" class="swiper-item" >
+        {{item}}
+      </swiper-item>
+  </swiper>
+  <text>只有text才会有长按选中</text>
+  <rich-text nodes="<h1 style='color:red'>渲染后端返回的html文本</h1>"></rich-text>
+  <button>普通按钮</button>
+  <button type="primary">主色调按钮</button>
+  <button type="warn">主色调按钮</button>
+  <button type="warn" plain>镂空按钮</button>
+  <button type="primary" size="mini">按钮大小</button>
+  <image class="image" src="/images/image.jpg" mode="widthFix"></image>
+
+  <view> 时间监听 </view>
+<!-- </template> -->
