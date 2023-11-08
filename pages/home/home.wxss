@@ -1,0 +1,11 @@
+/* pages/home/home.wxss */
+.body{
+  background-color: #fff;
+}
+.main{
+  padding: 0 20rpx;
+}
+
+.mr-70{
+  margin-right: 70rpx;
+}

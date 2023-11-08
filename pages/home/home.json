@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "head": "/components/head/head",
+    "card": "/components/card/card",
+    "card-item": "/components/card-item/card-item"
+  }
+}

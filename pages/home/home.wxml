@@ -1,0 +1,16 @@
+<!--pages/home/home.wxml-->
+<head></head>
+<scroll-view class="body" scroll-y="true">
+   <view class="input-box">
+    <input class="search-input" maxlength="10" placeholder="搜索" />
+   </view>
+   <view class="main">
+    <card title="近期上映">
+      <scroll-view class="body" scroll-x="true">
+        <view class="flex">
+          <card-item title="{{item.title}}" imageUrl="{{item.img}}" score="{{item.score}}" class="mr-70" wx:for="{{firstList}}"></card-item>
+        </view>
+      </scroll-view>
+    </card>
+   </view>
+</scroll-view>
