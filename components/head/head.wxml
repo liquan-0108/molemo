@@ -1,0 +1,4 @@
+<!--components/head/head.wxml-->
+<view class="head">
+  <text>豆瓣评分</text>
+</view>
