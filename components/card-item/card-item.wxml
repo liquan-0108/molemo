@@ -1,0 +1,19 @@
+<!--components/card-item/card-item.wxml-->
+<view class="{{ifBlock ? 'block':'inline-block'}}">
+  <view class="card-item">
+    <image class="picture" src="{{imageUrl}}"></image>
+    <text>{{title}}</text>
+    <view class="flex">
+      <van-rate 
+        value="{{ score }}" 
+        bind:change="onChange" 
+        size="{{15}}"  
+        color="#ffd21e"
+        void-icon="star"
+        void-color="#eee"
+        allow-half
+      />
+      <text class="score">{{score}}</text>
+    </view>
+  </view>
+</view>

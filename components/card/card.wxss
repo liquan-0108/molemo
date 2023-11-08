@@ -1,0 +1,9 @@
+/* components/card/card.wxss */
+.card-box{
+  padding: 20rpx 0;
+}
+.card-title{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}

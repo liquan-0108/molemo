@@ -1,0 +1,18 @@
+/* components/card-item/card-item.wxss */
+.card-item{
+  display: flex;
+  flex-direction: column; 
+}
+.picture{
+  width: 250rpx;
+  height: 250rpx;
+}
+.score{
+  margin-left: 20rpx;
+}
+.inline-block{
+  display: inline-block;
+}
+.block{
+  display: block;
+}
