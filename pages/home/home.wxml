@@ -1,16 +1,68 @@
 <!--pages/home/home.wxml-->
-<head></head>
-<scroll-view class="body" scroll-y="true">
-   <view class="input-box">
-    <input class="search-input" maxlength="10" placeholder="搜索" />
-   </view>
-   <view class="main">
-    <card title="近期上映">
-      <scroll-view class="body" scroll-x="true">
-        <view class="flex">
-          <card-item title="{{item.title}}" imageUrl="{{item.img}}" score="{{item.score}}" class="mr-70" wx:for="{{firstList}}"></card-item>
-        </view>
-      </scroll-view>
-    </card>
-   </view>
-</scroll-view>
+<view class="container">
+  <head></head>
+  <view class="body">
+    <view class="input-box">
+      <!-- <input class="search-input" maxlength="10" placeholder="搜索" /> -->
+      <view class="search-input" bindtap="jumpSearch">
+        <van-icon name="search" />
+        <text>搜索</text>
+      </view>
+    </view>
+    <view class="main">
+      <card title="近期上映">
+        <scroll-view scroll-x="true">
+          <view class="flex">
+            <card-item
+              title="{{item.title}}"
+              imageUrl="{{item.img}}"
+              score="{{item.score}}"
+              class="mr-70" 
+              wx:for="{{firstList}}"
+            ></card-item>
+          </view>
+        </scroll-view>
+      </card>
+      <card title="热门电影">
+        <scroll-view scroll-x="true">
+          <view class="flex">
+            <card-item
+              title="{{item.title}}"
+              imageUrl="{{item.img}}"
+              score="{{item.score}}"
+              class="mr-70" 
+              wx:for="{{secondList}}"
+            ></card-item>
+          </view>
+        </scroll-view>
+      </card>
+      <card title="电视剧">
+        <scroll-view scroll-x="true">
+          <view class="flex">
+            <card-item
+              title="{{item.title}}"
+              imageUrl="{{item.img}}"
+              score="{{item.score}}"
+              class="mr-70" 
+              wx:for="{{thirdList}}"
+            ></card-item>
+          </view>
+        </scroll-view>
+      </card>
+      <card title="综艺">
+        <scroll-view scroll-x="true">
+          <view class="flex">
+            <card-item
+              title="{{item.title}}"
+              imageUrl="{{item.img}}"
+              score="{{item.score}}"
+              class="mr-70" 
+              wx:for="{{fourthList}}"
+            ></card-item>
+          </view>
+        </scroll-view>
+      </card>
+    </view>
+  </view>
+  <tabbar></tabbar>
+</view>

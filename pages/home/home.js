@@ -1,6 +1,5 @@
 // pages/home/home.js
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -31,9 +30,36 @@ Page({
         title:'姬霓太美',
         score: 2.5 
       }
-    ]
+    ],
+    secondList:[
+      {
+        img:'../../images/image.jpg',
+        title:'姬霓太美',
+        score: 2.5 
+      },
+    ],
+    thirdList:[
+      {
+        img:'../../images/image.jpg',
+        title:'姬霓太美',
+        score: 2.5 
+      },
+    ],
+    fourthList:[
+      {
+        img:'../../images/image.jpg',
+        title:'姬霓太美',
+        score: 2.5 
+      },
+    ],
   },
 
+  // 跳转到搜索页
+  jumpSearch(){
+    wx.switchTab({
+      url: 'url',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

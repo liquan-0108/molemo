@@ -1,6 +1,31 @@
 /* pages/home/home.wxss */
+.container{
+  width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.body{
+  flex: 1;
+  overflow: auto;
+}
 .body{
   background-color: #fff;
+  padding-bottom: 105rpx;
+}
+.search-input{
+  width: 100%;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+.search-input text{
+  font-size: 14px;
+  margin-left: 10rpx;
 }
 .main{
   padding: 0 20rpx;
@@ -8,4 +33,7 @@
 
 .mr-70{
   margin-right: 70rpx;
+}
+.mt-50{
+  margin-top: 50rpx;
 }
