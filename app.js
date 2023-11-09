@@ -12,9 +12,18 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+    // 顶部动态适配
+    var that = this;
+    wx.getSystemInfo({
+      success: function (res) {
+          that.globalData.statusBarHeight = res.statusBarHeight;
+       }
+  })
+
   },
   globalData: {
     userInfo: null,
+    statusBarHeight: 0,
     tabberActive: 0
   }
 })

@@ -1,11 +1,12 @@
 // components/head/head.js
+const app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    statusBarHeight: app.globalData.statusBarHeight,
   },
 
   /**
