@@ -1,0 +1,5 @@
+<!--components/tabbar/tabber.wxml-->
+<van-tabbar active="{{ active }}" bind:change="onChange" active-color="#4fc08d">
+    <van-tabbar-item icon="home-o" url="/pages/home/home">电影</van-tabbar-item>
+    <van-tabbar-item icon="contact-o" url="/pages/mine/mine">我的</van-tabbar-item>
+</van-tabbar>
