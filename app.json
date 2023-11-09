@@ -1,10 +1,6 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/list/list",
-    "pages/logs/logs",
-    "pages/index/index",
-    "components/head/head"
   ],
   "window": {
     "navigationBarTextStyle": "black",
