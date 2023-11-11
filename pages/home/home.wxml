@@ -2,13 +2,7 @@
 <view class="container">
   <head></head>
   <view class="body">
-    <view class="input-box">
-      <!-- <input class="search-input" maxlength="10" placeholder="搜索" /> -->
-      <view class="search-input" bindtap="jumpSearch">
-        <van-icon name="search" />
-        <text>搜索</text>
-      </view>
-    </view>
+    <search-input></search-input>
     <view class="main">
       <card title="近期上映">
         <scroll-view scroll-x="true">
@@ -19,6 +13,7 @@
               score="{{item.score}}"
               class="mr-70" 
               wx:for="{{firstList}}"
+              wx:key="index"
             ></card-item>
           </view>
         </scroll-view>
@@ -32,6 +27,7 @@
               score="{{item.score}}"
               class="mr-70" 
               wx:for="{{secondList}}"
+              wx:key="index"
             ></card-item>
           </view>
         </scroll-view>
@@ -45,6 +41,7 @@
               score="{{item.score}}"
               class="mr-70" 
               wx:for="{{thirdList}}"
+              wx:key="index"
             ></card-item>
           </view>
         </scroll-view>
@@ -58,6 +55,7 @@
               score="{{item.score}}"
               class="mr-70" 
               wx:for="{{fourthList}}"
+              wx:key="index"
             ></card-item>
           </view>
         </scroll-view>
