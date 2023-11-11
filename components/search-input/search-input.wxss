@@ -1,0 +1,21 @@
+/* components/search-input/search-input.wxss */
+.search-input{
+  width: 100%;
+  padding: 0 20rpx 10rpx 20rpx;
+  box-sizing: border-box;
+  background-color: #00cc66;
+}
+.input-box{
+  height: 50rpx;
+  background-color: #fff;
+  padding: 0 15rpx;
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.search-input text{
+  font-size: 14px;
+  margin-left: 10rpx;
+}

@@ -1,0 +1,7 @@
+<!--components/search-input/search-input.wxml-->
+<view class="search-input">
+  <view class="input-box "  bindtap="jumpSearch">  
+    <van-icon name="search" />
+    <text>搜索</text>
+  </view>
+</view>
