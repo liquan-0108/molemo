@@ -1,7 +1,15 @@
 <!--components/head/head.wxml-->
 <view class="head-box">
   <view class="head-position" style='height: {{statusBarHeight}}px;'></view>
-  <view class="head">
-    <text>豆瓣评分</text>
+  <view class="">
+    <van-icon
+      name="arrow-left"
+      color="#fff"
+      bindtap="back"
+      wx:if="{{showBack}}"
+    />
+    <view class="head">
+      <text>豆瓣评分</text>
+    </view>
   </view>
 </view>
