@@ -1,4 +1,18 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
-
-<tabbar></tabbar>
+<view class="container">
+  <head></head>
+  <view class="login-box flex flex-column justify-center align-center" >
+    <van-image
+      round
+      width="160rpx"
+      height="160rpx"
+      fit="cover"
+      src="{{headImg}}"
+    />
+    <text  wx:if="{{userName === ''}}" bindtap="wxLogin">未登录</text>
+    <text wx:else>{{userName}}</text>
+  </view>
+  <button bindtap="getPhoneNumber">获取手机号</button>
+  <!-- <button open-type="getPhoneNumber" @getPhoneNumber></button> -->
+  <tabbar></tabbar>
+</view>

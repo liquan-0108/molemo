@@ -1,1 +1,11 @@
 /* pages/mine/mine.wxss */
+@import "../../app.wxss";
+.login-box{
+  padding: 30rpx 0;
+  background: chartreuse;
+}
+.login-box text{
+  font-size: 30rpx;
+  color: #fff;
+  font-weight: bolder;
+}
