@@ -1,0 +1,14 @@
+<!--components/tag/tag.wxml-->
+<view class="tag">
+  <view>
+    <van-tag 
+      wx:if="{{inlayTagLitle}}"
+      class="hot" 
+      size="small" 
+      type="primary" 
+      color="#f18132" 
+      text-color="#fff"
+    >{{inlayTagLitle}}</van-tag>
+    <text>{{tagLitle}}</text>
+  </view>
+</view>

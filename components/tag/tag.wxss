@@ -1,0 +1,19 @@
+/* components/tag/tag.wxss */
+.tag{
+  display: inline-block;
+}
+.tag > view{
+  display: flex;
+  align-items: center;
+  padding:  10rpx 40rpx;
+  box-sizing: border-box;
+  border-radius: 50rpx;
+  background-color: #f7f8fa;
+}
+
+.tag > view > text{
+  margin-left: 10rpx;
+}
+.hot {
+  display: flex;
+}
