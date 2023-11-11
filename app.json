@@ -2,6 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/search/search"
   ],
   "window": {
     "navigationBarTextStyle": "black",
