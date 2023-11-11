@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "navigation-bar":"/components/navigation-bar/navigation-bar",
+    "head": "/components/head/head",
+    "card-item": "/components/card-item/card-item",
+    "van-search": "@vant/weapp/search/index",
+    "tag": "/components/tag/tag"
+  }
+}

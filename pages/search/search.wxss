@@ -1,0 +1,14 @@
+/* pages/search/search.wxss */
+.search-recommend {
+  padding: 20rpx 40rpx;
+}
+.search-recommend > view {
+  margin-top: 20rpx;
+}
+.search-recommend > view tag{
+  margin-right: 16rpx;
+  margin-bottom: 16rpx;
+  display: inline-block;
+}
+.mr-16{
+}

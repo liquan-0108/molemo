@@ -1,0 +1,25 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+  <head showBack="true"></head>
+  <view>
+    <view class="input-box "  bindtap="jumpSearch">  
+      <van-search
+        value="{{ value }}"
+        placeholder="请输入搜索关键词"
+        show-action
+        shape="round"
+        background="#00cc66"
+        bind:search="onSearch"
+        bind:cancel="onCancel"
+        cancel-class="cancel-class"
+      />
+    </view>
+  </view>
+  <view class="search-recommend">
+    <text>热门搜索</text>
+    <view>
+      <tag tagLitle="{{item.tagLitle}}" inlayTagLitle="{{item.inlayTagLitle}}"  wx:for="{{tagData}}"/>
+    </view>
+  </view>
+</view>
+
