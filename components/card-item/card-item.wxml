@@ -1,13 +1,13 @@
 <!--components/card-item/card-item.wxml-->
-<view class="{{ifBlock ? 'block':'inline-block'}}">
+<view class="{{ifBlock ? 'block':'inline-block'}}" bindtap="jumpDetail">
   <view class="card-item">
-    <image class="picture" src="{{imageUrl}}"></image>
+    <image mode="{{mode}}" style="width:{{imageWidth}};height:{{imageHeight}};" src="{{imageUrl}}"></image>
     <text>{{title}}</text>
     <view class="flex">
       <van-rate 
         value="{{ score }}" 
         bind:change="onChange" 
-        size="{{15}}"  
+        size="{{startSize}}"  
         color="#ffd21e"
         void-icon="star"
         void-color="#eee"
