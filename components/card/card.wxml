@@ -2,7 +2,7 @@
 <view class="card-box">
   <view class="card-title">
     <text>{{title}}</text>
-    <navigator>更多 ></navigator>
+    <navigator url="{{url}}">更多 ></navigator>
   </view>
   <slot></slot>
 </view>

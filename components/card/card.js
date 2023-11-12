@@ -7,6 +7,10 @@ Component({
     title:{
       type:String,
       value:''
+    },
+    url: {
+      type:String,
+      value:''
     }
   },
 
