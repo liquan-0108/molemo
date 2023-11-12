@@ -1,0 +1,9 @@
+/* components/comment-item/comment-item.wxss */
+.avatar{
+  margin-right: 26rpx;
+}
+.text{
+  color: black;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}

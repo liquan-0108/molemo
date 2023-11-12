@@ -1,0 +1,26 @@
+<!--components/comment-item/comment-item.wxml-->
+<view class="flex text">
+  <van-image
+    class="avatar"
+    round
+    width="70rpx"
+    height="70rpx"
+    src="{{imgUrl}}"
+  />
+  <view class="flex flex-column">
+    <view>
+      <text>{{userName}}</text>
+      <van-rate 
+          value="{{ score }}" 
+          bind:change="onChange" 
+          size="10"  
+          color="#ffd21e"
+          void-icon="star"
+          void-color="#eee"
+          allow-half
+        />
+    </view>
+    <text>{{time}}</text>
+    <text>{{content}}</text>
+  </view>
+</view>
