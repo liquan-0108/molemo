@@ -6,6 +6,12 @@
   flex-direction: column;
   height: 100vh;
 }
+.body{
+  flex: 1;
+  overflow: auto;
+  background-color: #fff;
+  padding-bottom: 105rpx;
+}
 .flex{
   display: flex;
 }
@@ -20,4 +26,21 @@
 }
 .align-center{
   align-items: center;
+}
+.align-flex-end{
+  align-items: flex-end;
+}
+.ellipsis-single{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ellipsis-more{
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.ellipsis-4{
+  -webkit-line-clamp: 4;
 }
