@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "card-item": "/components/card-item/card-item",
+    "search-input": "/components/search-input/search-input"
+  }
+}

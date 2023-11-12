@@ -1,0 +1,21 @@
+<!--pages/list/list.wxml-->
+<view class="container">
+  <head showBack="true" title="{{title}}"></head>
+  <view>
+    <search-input></search-input>
+    <view class="main">
+      <card-item
+        title="{{item.title}}"
+        imageUrl="{{item.img}}"
+        score="{{item.score}}"
+        class="mr-70" 
+        wx:for="{{list}}"
+        wx:key="index"
+        imageWidth="{{'210rpx'}}"
+        imageHeight="{{'300rpx'}}"
+        id="{{item.id}}"
+        bindclick="jump"
+      ></card-item>
+    </view>
+  </view>
+</view>
