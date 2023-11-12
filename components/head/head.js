@@ -14,6 +14,10 @@ Component({
       type: Number,
       value: 1
     },
+    title:{
+      type: String,
+      value:'豆瓣评分'
+    }
   },
 
   /**
@@ -34,7 +38,6 @@ Component({
           delta: data.delta
         })
       }
-      this.triggerEvent('back', { delta: data.delta }, {})
     }
   }
 })

@@ -1,63 +1,44 @@
 // pages/home/home.js
+import Toast from '@vant/weapp/toast/toast';
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    firstList:[
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      }
-    ],
-    secondList:[
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-    ],
-    thirdList:[
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-    ],
-    fourthList:[
-      {
-        img:'../../images/image.jpg',
-        title:'姬霓太美',
-        score: 2.5 
-      },
-    ],
+    firstList:[],
+    secondList:[],
+    thirdList:[],
+    fourthList:[]
+  },
+
+  jump (e) {
+    const _this = this
+    debugger
+    wx.navigateTo({
+      url: `/pages/detail/detail?detailId=${e.currentTarget.id}`,
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    const _this = this
+    wx.request({
+      url: 'https://myapi.com/api/getAllList',
+      success: function(res) {
+        if(res.statusCode !== 200){
+          Toast('我是提示文案，建议不超过十五字~');
+          return
+        }
+        _this.setData({
+          firstList:res.data.firstList,
+          secondList:res.data.secondList,
+          thirdList:res.data.thirdList,
+          fourthList:res.data.fourthList
+        })
+      }
+    })
   },
 
   /**

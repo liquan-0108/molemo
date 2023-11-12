@@ -9,7 +9,7 @@
       wx:if="{{showBack}}"
     />
     <view class="head">
-      <text>豆瓣评分</text>
+      <text>{{title}}</text>
     </view>
   </view>
 </view>

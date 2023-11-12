@@ -1,11 +1,6 @@
 /* pages/home/home.wxss */
 @import "../../app.wxss";
-.body{
-  flex: 1;
-  overflow: auto;
-  background-color: #fff;
-  padding-bottom: 105rpx;
-}
+
 .main{
   padding: 0 20rpx;
 }

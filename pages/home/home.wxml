@@ -4,7 +4,7 @@
   <view class="body">
     <search-input></search-input>
     <view class="main">
-      <card title="近期上映">
+      <card title="近期上映" url="/pages/list/list?getTypeList=0">
         <scroll-view scroll-x="true">
           <view class="flex">
             <card-item
@@ -14,11 +14,13 @@
               class="mr-70" 
               wx:for="{{firstList}}"
               wx:key="index"
+              id="{{item.id}}"
+              bindclick="jump"
             ></card-item>
           </view>
         </scroll-view>
       </card>
-      <card title="热门电影">
+      <card title="热门电影" url="/pages/list/list?title=近期上映">
         <scroll-view scroll-x="true">
           <view class="flex">
             <card-item
@@ -63,4 +65,5 @@
     </view>
   </view>
   <tabbar></tabbar>
+  <van-toast id="van-toast" />
 </view>

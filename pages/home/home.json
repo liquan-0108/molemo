@@ -1,10 +1,9 @@
 {
   "usingComponents": {
-    "head": "/components/head/head",
+
     "card": "/components/card/card",
     "card-item": "/components/card-item/card-item",
     "tabbar": "/components/tabbar/tabbar",
-    "search-input": "/components/search-input/search-input",
-    "van-icon": "@vant/weapp/icon/index"
+    "search-input": "/components/search-input/search-input"
   }
 }
