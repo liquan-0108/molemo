@@ -1,0 +1,58 @@
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <head showBack="true" title="{{title}}"></head>
+  <view class="body">
+    <view class="main">
+      <view class="movie">
+        <image class="bg" src="../../images/image.jpg"></image>
+        <view class="movie-infor">
+          <image mode="aspectFill" class="img" src="../../images/image.jpg"></image>
+          <view class="rate-info">
+            <text class="title">狂暴巨兽</text>
+            <view class="rate-comment-info flex align-flex-end">
+              <text class="rate-num">2.4</text>
+              <view class="flex flex-column">
+                <van-rate 
+                  value="{{ score }}" 
+                  bind:change="onChange" 
+                  size="10"  
+                  color="#ffd21e"
+                  void-icon="star"
+                  void-color="#eee"
+                  allow-half
+                />
+                <text class="comment-num">35412评论</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="movie-intro text">
+          <view class="flex flex-column">
+            <text>107分钟  动作/科幻/冒险</text>
+            <text>2018-04-13（中国大陆)上映 美国</text>
+            <text>布拉德·佩顿 (导演）/道恩·强森 / 娜奥米·哈里斯 /杰弗里·迪恩·摩根</text>
+          </view>
+        </view>
+        <view class="flex movie-record-btn">
+          <van-button plain  type="primary" block class="mr-80">想看</van-button>
+          <van-button plain  type="primary" block>看过</van-button>
+        </view>
+        <view class="brief-intro flex flex-column text">
+          <text class="brief-title">狂暴巨兽的剧情简介</text>
+          <text class="brief-content ellipsis-more ellipsis-4">巨石强森饰演的灵长类动物学家一直与人类保持距离, 却跟极为聪明的银背大猩猩乔治有着深厚的感情。但是一次基因实验出错, 让这只温驯的大猩猩变成狂怒难驯的庞然巨兽。更可怕的是, 其他动物也发生了同样基因异变。他必须阻止这场全球性的灾难, 更重要是要拯救他的好友乔治。</text>
+        </view>
+      </view>
+      <view class="comment-section text">
+        <view class="comment-title">短评（15649）</view>
+        <comment-item 
+          wx:for="{{commentList}}"
+          imgUrl="{{item.imgUrl}}"
+          userName="{{item.userName}}"
+          score="{{item.score}}"
+          time="{{item.time}}"
+          content="{{item.content}}"
+        ></comment-item>
+      </view>
+    </view>
+  </view>
+  </view>

@@ -1,0 +1,88 @@
+/* pages/detail/detail.wxss */
+.body{
+
+}
+.text{
+  color: black;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.movie .movie-infor , .movie .movie-intro , .movie-record-btn , .brief-intro , .comment-section{
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.bg{
+  width: 100%;
+  height: 300rpx;
+  position: relative;
+}
+.bg::after{
+  content: '';
+  width: 100%;
+  height: 600rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0,   0, 0, 0.7);
+}
+.movie-infor{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: -216rpx;
+  position: relative;
+  z-index: 16;
+  color: #fff;
+  margin-bottom: 30rpx;
+}
+.movie-infor .img{
+  width: 180rpx;
+  height: 280rpx;
+}
+.rate-info{
+  margin-left: 20rpx;
+}
+.title{
+  font-size: 40rpx;
+}
+.rate-comment-info{
+
+}
+.rate-num{
+  font-size: 50rpx;
+  margin-right: 18rpx;
+}
+.comment-num{
+  font-size: 28rpx;
+  color: #bfbfbf;
+}
+.movie-intro text {
+  line-height: 40rpx;
+}
+.movie-record-btn{
+  box-sizing: border-box;
+  margin-top: 30rpx;
+}
+.movie-record-btn van-button{
+  flex: 1;
+}
+.mr-80{
+  margin-right: 80rpx;
+}
+.brief-intro{
+  margin-top: 50rpx;
+}
+
+.brief-intro .brief-title, .comment-section .comment-title{
+  color: #807e7e;
+  margin-bottom: 20rpx;
+}
+.comment-section{
+  margin-top: 20rpx;
+  padding-bottom: 50rpx;
+}
+.comment-section comment-item{
+  display: block;
+  margin-bottom: 30rpx;
+}
