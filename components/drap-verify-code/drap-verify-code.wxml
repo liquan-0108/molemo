@@ -1,0 +1,52 @@
+<van-popup 
+    show="{{ show }}" 
+    bind:close="onClose"
+    bind:after-enter="afterEnter"
+    bind:before-enter="beforeEnter"
+    custom-class="{{isVerifyErr ? 'shake' : ''}}"
+>
+<view class="verify_dia_code_box">
+    <view class="slide">
+        <view class="verify-img-out">
+            <view class="verify-img-panel">
+                <span wx:if="{{tipsMsg !== ''}}" class="verify-tips {{ className }}">{{tipsMsg}}</span>
+                <van-image
+                    custom-class="backImg"
+                    use-error-slot
+                    fit="cover"
+                    src="{{backImg}}"
+                    >
+                    <text slot="error">加载失败</text>
+                </van-image>
+            </view>
+        </view>
+        <view class="verify-bar-area">
+            <span class="verify-msg">
+                <span>向右滑动完成验证</span>
+            </span>
+            <view class="verify-left-bar">
+                <span class="verify-msg"></span>
+                <view 
+                    class="verify-move-block"
+                    bindtouchstart="touchStart"
+                    bindtouchmove="touchMove"
+                    bindtouchend="touchEnd"
+                    style="left:{{slideClientX}}px"
+                >
+                    <view class="verify-sub-block">
+                        <van-image
+                            custom-class="bock-backImg"
+                            fit="heightFix"
+                            src="{{bockBackImg}}"
+                            />
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="verify-refresh">
+            <van-icon name="replay" custom-class="icon replay-icon" bindtap="refresh"/>
+            <van-icon name="close" custom-class="icon close-icon" bindtap="close"/>
+        </view>
+    </view>
+</view>
+</van-popup>
